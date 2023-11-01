@@ -167,7 +167,7 @@ const Todolist = () => {
 
   return (
     <div className="todolist-container center-horizontal">
-      <Button className='btn logout' type="primary" onClick={handleLogout}>Logout</Button>
+      <Button className='btn-logout' type="primary" onClick={handleLogout}>Logout</Button>
       <Title style={{ color: 'white' }} level={2}>To-Do List</Title>
       <Space direction="vertical" size="large">
         <Row justify="center" align="middle">
