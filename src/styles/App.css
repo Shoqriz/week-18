@@ -1,0 +1,20 @@
+.logo {
+  height: 80px;
+  will-change: filter;
+  transition: filter 500ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em yellow);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  color: black;
+  background-color: yellow;
+  font-weight: bold;  
+}

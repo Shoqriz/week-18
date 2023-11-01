@@ -1,0 +1,13 @@
+.admin {
+    margin: 100px;
+}
+
+.btn {
+    color: black;
+    background-color: red;
+    font-weight: bold;  
+}
+
+.logout {
+    margin: 0px 0px 10px 0px;
+}
