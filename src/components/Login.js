@@ -19,7 +19,7 @@ const Login = () => {
         password: values.password,
       };
 
-      const response = await fetch('http://localhost:3000/auth/login', {
+      const response = await fetch('https://sz-w18.netlify.app/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
