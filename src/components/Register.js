@@ -20,7 +20,7 @@ const Register = () => {
         role: values.role,
       };
 
-      const response = await fetch('http://localhost:3000/auth/register', {
+      const response = await fetch('https://sz-w18.netlify.app/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
