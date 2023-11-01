@@ -12,7 +12,7 @@ const Todolist = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:3000/user/tasks', {
+      const response = await fetch('https://sz-w18.netlify.app/user/tasks', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
         },
@@ -36,7 +36,7 @@ const Todolist = () => {
 
   const handleCreateTask = async (values) => {
     try {
-      const response = await fetch('http://localhost:3000/user/tasks', {
+      const response = await fetch('https://sz-w18.netlify.app/user/tasks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const Todolist = () => {
 
   const handleUpdateTask = async (values) => {
     try {
-      const response = await fetch(`http://localhost:3000/user/tasks/${editingTask._id}`, {
+      const response = await fetch(`https://sz-w18.netlify.app/user/tasks/${editingTask._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ const Todolist = () => {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:3000/user/tasks/${taskId}`, {
+      const response = await fetch(`https://sz-w18.netlify.app/user/tasks/${taskId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -127,7 +127,7 @@ const Todolist = () => {
 
   const handleCompleteTask = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:3000/user/tasks/complete/${taskId}`, {
+      const response = await fetch(`https://sz-w18.netlify.app/user/tasks/complete/${taskId}`, {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -150,7 +150,7 @@ const Todolist = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:3000/auth/logout', {
+      const response = await fetch('https://sz-w18.netlify.app/auth/logout', {
         method: 'GET',
       });
 
