@@ -16,7 +16,7 @@ const Admin = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('https://sz-w18.netlify.app/admin/users', {
+      const response = await fetch('https://w18be.cyclic.app/admin/users', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -37,7 +37,7 @@ const Admin = () => {
 
   const fetchUserLists = async (userId) => {
     try {
-      const response = await fetch(`https://sz-w18.netlify.app/admin/users/${userId}/lists`, {
+      const response = await fetch(`https://w18be.cyclic.app/admin/users/${userId}/lists`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -58,7 +58,7 @@ const Admin = () => {
 
   const handleDeleteUser = async (userId) => {
     try {
-      const response = await fetch(`https://sz-w18.netlify.app/admin/users/${userId}`, {
+      const response = await fetch(`https://w18be.cyclic.app/admin/users/${userId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -82,7 +82,7 @@ const Admin = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('https://sz-w18.netlify.app/auth/logout', {
+      const response = await fetch('https://w18be.cyclic.app/auth/logout', {
         method: 'GET',
       });
 
